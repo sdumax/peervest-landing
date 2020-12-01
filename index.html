@@ -35,8 +35,12 @@
         font-family: "supplyLight";
         src: url(./assets/fonts/supply-light.otf);
       }
+      @font-face {
+        font-family: "supply";
+        src: url(./assets/fonts/supply.otf);
+      }
       body {
-        font-family: "supplyLight";
+        font-family: "supply";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -90,6 +94,13 @@
   </head>
   <body>
     <div class="screen">
+      <nav class="navbar navbar-light d-flex">
+        <i class="fa fa-arrow-left"></i>
+        <a class="navbar-brand" href="#"><img src="./Peervest.svg" alt="logo" style="
+          height: 20px;
+      "></a>
+      </nav>
+      <hr class="m-0">
       <div class="container-fliud">
         <div class="owl-carousel owl-theme owl-loaded">
           <div class="item">
@@ -192,7 +203,7 @@
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingOne"
-                ><small class="text-muted">STEP 1</small>
+                ><h5 class="text-muted">STEP 1</h5>
                   <h5 class="mb-0 ">
                     <span class="d-flex flex-row align-items-center">
                       <i class="fa fa-arrow-right"></i>
@@ -227,7 +238,7 @@
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingTwo"
-                ><small class="text-muted">STEP 2</small>
+                ><h5 class="text-muted">STEP 2</h5>
                   <h5 class="mb-0">
                      <span class="d-flex flex-row align-items-center"><i class="fa fa-arrow-right"></i>
                    
@@ -261,7 +272,7 @@
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingThree"
-                > <small class="text-muted">STEP 3</small>
+                > <h5 class="text-muted">STEP 3</h5>
                   <h5 class="mb-0">
                     <span class="d-flex flex-row align-items-center"><i class="fa fa-arrow-right"></i>
                     <button
@@ -348,7 +359,7 @@
               </button>
             </div>
           </div>
-          <div class="item bg-warning">
+          <div class="item">
             <h3>JOIN US</h3>
             <p>slide paragraph example</p>
             <p class="text-muted small">
