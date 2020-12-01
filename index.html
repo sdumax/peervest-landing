@@ -45,20 +45,22 @@
       h3,
       h4,
       h5,
-      h6 {
+      h6,small {
         font-family: "supplyBold";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
 
       .item {
-        text-align: center;
-        padding: 50px;
+        text-align: left;
+        padding: 30px;
         margin: auto;
         justify-content: center;
-        width: 100%;
+        width: 100;
         height: 100vh;
-      }
+      }.card-header{
+        padding-left: 0;
+      }.divide
       .screen {
         height: 100%;
       }
@@ -77,7 +79,13 @@
           }.text-black:hover, .text-black:focus{
             color: #333;
             border: none;
-          }
+          } .btn-link:hover,
+ .btn-link:focus {
+  text-decoration: none;
+  box-shadow: none;
+}.card, .card:last-child .card-header {
+  border: none;
+}
     </style>
   </head>
   <body>
@@ -95,7 +103,7 @@
               Peervest brings a new way for like minded peers to invest in
               highly vetted global assets and deals.
             </p>
-            <div class="my-2">
+            <div class="my-4">
               <button class="btn btn-outline-secondary mx-auto">
                 How <span><i class="fa fa-arrow-right"></i></span>
               </button>
@@ -114,7 +122,7 @@
                 overall (growth) returns over the long term.
               </em>
             </p>
-            <div class="my-2">
+            <div class="my-4">
               <button class="btn mx-auto btn-outline-secondary">
                 Investment areas <span><i class="fa fa-arrow-right"></i></span>
               </button>
@@ -167,7 +175,7 @@
                     And More
                   </label>
                 </div>
-                <div class="my-2">
+                <div class="my-4">
                   <button class="btn mx-auto btn-outline-secondary">
                     How it works <span><i class="fa fa-arrow-right"></i></span>
                   </button>
@@ -178,16 +186,15 @@
           <div class="item">
             <h3>
               WHAT IT TAKE <br />
-              <span class="text-muted small">how it works</span>
             </h3>
             <div id="accordion">
               <div class="card border-0 bg-white">
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingOne"
-                >
-                  <h5 class="mb-0 d-flex flex-row align-content-center">
-                    <span>
+                ><small class="text-muted">STEP 1</small>
+                  <h5 class="mb-0 ">
+                    <span class="d-flex flex-row align-items-center">
                       <i class="fa fa-arrow-right"></i>
                       <button
                         class="btn btn-link accord text-black text-decoration-none"
@@ -196,12 +203,12 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        Step 1
+                      Strategic hunt & negotiation
                       </button>
                     </span>
                   </h5>
                 </div>
-
+<hr class="m-0">
                 <div
                   id="collapseOne"
                   class="collapse collapsed"
@@ -209,7 +216,6 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <b>Strategic hunt & negotiation</b> <br />
                     We strategically hunt for profitable deals, critically vet
                     them using our predictive models and processes, once we
                     find a fitting deal, it is divided into 10,000 units and a
@@ -221,9 +227,9 @@
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingTwo"
-                >
-                  <h5 class="mb-0 d-flex flex-row align-content-center">
-                     <span><i class="fa fa-arrow-right"></i>
+                ><small class="text-muted">STEP 2</small>
+                  <h5 class="mb-0">
+                     <span class="d-flex flex-row align-items-center"><i class="fa fa-arrow-right"></i>
                    
                     <button
                       class="btn btn-link collapsed accord text-black text-decoration-none"
@@ -232,10 +238,11 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Step 2
+                    You reserve now & pay later
                     </button></span>
                   </h5>
                 </div>
+                <hr class="m-0">
                 <div
                   id="collapseTwo"
                   class="collapse"
@@ -243,7 +250,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <b>You reserve now & pay later</b>
+                    
                 Reserve units in the project, during the reservation window.
                 When you reserve units, you won’t pay until a reservation
                 milestone is met and the project is good to go.
@@ -254,9 +261,9 @@
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingThree"
-                >
-                  <h5 class="mb-0 d-flex flex-row align-content-center">
-                    <span><i class="fa fa-arrow-right"></i>
+                > <small class="text-muted">STEP 3</small>
+                  <h5 class="mb-0">
+                    <span class="d-flex flex-row align-items-center"><i class="fa fa-arrow-right"></i>
                     <button
                       class="btn btn-link collapsed accord text-black text-decoration-none"
                       data-toggle="collapse"
@@ -264,10 +271,11 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Step 3
+                    You get paid
                     </button></span>
                   </h5>
                 </div>
+                <hr class="m-0">
                 <div
                   id="collapseThree"
                   class="collapse"
@@ -275,7 +283,6 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <b>You get paid</b>
                 Peervest will take care of the deal and provide regular updates
                 and cash distribution monthly, quarterly, yearly etc. as the
                 case may be, while you focus on the things that matter most to
@@ -284,32 +291,8 @@
                 </div>
               </div>
             </div>
-            <!-- <dl>
-              <dt>Step 1</dt>
-              <dd>
-                <b>Strategic hunt & negotiation</b> <br />
-                We strategically hunt for profitable deals, critically vet them
-                using our predictive models and processes, once we find a
-                fitting deal, it is divided into 10,000 units and a campaign
-                project is created on Peervest.
-              </dd>
-              <dt>Step 2</dt>
-              <dd>
-                <b>You reserve now & pay later</b>
-                Reserve units in the project, during the reservation window.
-                When you reserve units, you won’t pay until a reservation
-                milestone is met and the project is good to go.
-              </dd>
-              <dt>Step 3</dt>
-              <dd>
-                <b>You get paid</b>
-                Peervest will take care of the deal and provide regular updates
-                and cash distribution monthly, quarterly, yearly etc. as the
-                case may be, while you focus on the things that matter most to
-                you.
-              </dd>
-            </dl> -->
-            <div class="my-2">
+            
+            <div class="my-4">
               <button class="btn mx-auto btn-outline-secondary">
                 Why join & invest <span><i class="fa fa-arrow-right"></i></span>
               </button>
