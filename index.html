@@ -156,7 +156,7 @@
 				  <p class="text-muted small">
 					Peervest is currently in private beta. Join the waitlist to get your invitation.
 				  </p>
-				  <form id="form_submit" action="post.php" name="subscription list" method="POST" data-netlify="true">
+				  <form id="form_submit" action="post.php" method="POST">
 					  <div class="form-group">
 						<label for="name" class="align-content-start">Name:</label>
 						<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
@@ -169,8 +169,8 @@
 						<label for="email">Email:</label>
 						<input type="email" name="email" id="email" class="form-control w-100" placeholder="enter your email">
 					  </div>
-<!-- 					  <button type="button" onclick="myFunction()" name="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button> -->
-					  <button type="button" name="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+					  <button type="button" onclick="myFunction()" name="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+<!-- 					  <button type="button" name="submit" id="submit" class="btn btn-primary btn-lg btn-block">Submit</button> -->
 					  
 					  <!-- <input type="submit" value="submit"> -->
 				  </form>
@@ -187,7 +187,7 @@
 	<script src="./assets/vendors/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script src="./assets/vendors/intl-tel-input-master/build/js/intlTelInput.min.js"></script>
 	<script src="./assets/js/main.js"></script>
-<!-- 	<script>
+	<script>
 		function myFunction() {
 			var name = document.getElementById("name");
 			var phone = document.getElementById("phone");
@@ -211,6 +211,6 @@
 			}
 			return false;
 		}
-	</script> -->
+	</script>
 </body>
 </html>
