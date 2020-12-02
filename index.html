@@ -89,20 +89,34 @@
   box-shadow: none;
 }.card, .card:last-child .card-header {
   border: none;
+}.custom-button{
+  display: inline-block;
+  padding: 9px 15px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #333;
+}.btn-color{
+  background-color: #00ffd0;
+}.font-2{
+  font-size: 1.6rem;
 }
     </style>
   </head>
   <body>
     <div class="screen">
-      <nav class="navbar navbar-light  sticky-top">
-        <div class="d-flex flex-row align-items-center justify-conter-between">
+      <nav class="navbar navbar-light bg-white  sticky-top">
+        <div>
           <i class="ml-2 fa fa-arrow-left"></i>
-        <a class="navbar-brand ml-4" href="#"><img src="./Peervest.svg" alt="logo" style="
-          height: 20px;
-      "></a>
-      <i class="fa fa-ellipsis-v"></i>
         </div>
-        
+        <a class="navbar-brand ml-4" href="#"><img src="./Peervest.svg" alt="logo" style="height: 20px;"></a>
+          <div class="">
+            <i class="fa fa-ellipsis-v font-2"></i>
+          </div>
       </nav>
       <hr class="m-0">
       <div class="container-fliud">
@@ -119,7 +133,7 @@
               highly vetted global assets and deals.
             </p>
             <div class="my-4">
-              <button class="btn btn-outline-secondary mx-auto">
+              <button class="custom-button mx-auto">
                 How <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
@@ -138,7 +152,7 @@
               </em>
             </p>
             <div class="my-4">
-              <button class="btn mx-auto btn-outline-secondary">
+              <button class="mx-auto custom-button">
                 Investment areas <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
@@ -191,7 +205,7 @@
                   </label>
                 </div>
                 <div class="my-4">
-                  <button class="btn mx-auto btn-outline-secondary">
+                  <button class="custom-button mx-auto">
                     How it works <span><i class="fa fa-arrow-right"></i></span>
                   </button>
                 </div>
@@ -358,7 +372,7 @@
               </dd>
             </dl>
             <div class="my-2">
-              <button class="btn mx-auto text-white badge-success">
+              <button class="custom-button btn-color mx-auto text-white badge-success">
                 Sign up <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
