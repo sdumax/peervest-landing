@@ -28,8 +28,17 @@
 
     <style>
       @font-face {
+        font-family: "SpaceMono";
+        src: url(./assets/fonts/SpaceMono-Regular.ttf);
+      }
+      @font-face {
         font-family: "supplyBold";
         src: url(./assets/fonts/supply-bold.otf);
+      }
+      @font-face {
+        font-family: "SpaceGrotesk";
+        src: url(./assets/fonts/SpaceGrotesk-light.otf);
+        font-weight: 300;
       }
       @font-face {
         font-family: "supplyLight";
@@ -40,7 +49,9 @@
         src: url(./assets/fonts/supply.otf);
       }
       body {
-        font-family: "supply";
+        font-family: "SpaceGroTesk";
+        font-size: 15px;
+        color: #414141;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -54,6 +65,17 @@
         font-family: "supplyBold";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+      button{
+        font-family: "SpaceGrotesk";
+        font-size: 14px !important;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .font-mono{
+        font-family: "SpaceMono";
+      }.font-spt{
+        font-family: "SpaceGrotesk";
       }
 
       .item {
@@ -114,7 +136,7 @@
         width: 50px !important;
         height: auto;
       }
-      .box {
+      .bo {
         border: 1px solid #333;
         padding: 9px 12px;
       }
@@ -148,14 +170,15 @@
       <div class="container-fliud">
         <div class="owl-carousel owl-theme owl-loaded">
           <div class="item">
-            <h3>WHAT IT TAKE <br /></h3>
+            <h3>WHAT IT TAKES <br /></h3>
+<small class="my-1 py-0 font-spt">Divorce your time and income in three easy steps</small>
             <div id="accordion">
               <div class="card border-0 bg-white">
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingOne"
                 >
-                  <h4 class="text-muted">STEP 1</h4>
+                  <h5 class="text-muted font-mono">STEP 1</h5>
                   <img
                     class="globe mx-auto"
                     src="./assets/images/world-wide-web.png"
@@ -164,14 +187,14 @@
                   <h5 class="mb-0">
                     <span class="">
                       <button
-                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link accord text-black text-decoration-none"
+                        class="mb-0 d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link accord text-black text-decoration-none"
                         data-toggle="collapse"
                         data-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        <span>Strategic hunt & negotiation</span>
-                        <i class="fa fa-chevron-down box"></i>
+                        <span>We hunt & negotiation</span>
+                        <i class="fa fa-chevron-down box mb-0"></i>
                       </button>
                     </span>
                   </h5>
@@ -196,7 +219,7 @@
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingTwo"
                 >
-                  <h4 class="text-muted">STEP 2</h4>
+                  <h5 class="text-muted font-mono">STEP 2</h5>
                   <img
                     class="globe mx-auto"
                     src="./assets/images/world-wide-web.png"
@@ -213,7 +236,7 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        <span>You reserve now & pay later</span>
+                        <span>You reserve now<br> & pay later</span>
                         <i class="fa fa-chevron-down box"></i></button
                     ></span>
                   </h5>
@@ -224,7 +247,7 @@
                   aria-labelledby="headingTwo"
                   data-parent="#accordion"
                 >
-                  <div class="card-body">
+                  <div class="card-body p-0">
                     Reserve units in the project, during the reservation window.
                     When you reserve units, you won’t pay until a reservation
                     milestone is met and the project is good to go.
@@ -237,7 +260,7 @@
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingThree"
                 >
-                  <h4 class="text-muted">STEP 3</h4>
+                  <h5 class="text-muted font-mono">STEP 3</h5>
                   <img
                     class="globe mx-auto"
                     src="./assets/images/world-wide-web.png"
@@ -245,7 +268,7 @@
                   />
                   <h5 class="mb-0">
                     <span class=""
-                      ><i class="fa fa-arrow-right"></i>
+                      >
                       <button
                         class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
                         data-toggle="collapse"
@@ -278,8 +301,8 @@
             </div>
 
             <div class="my-4">
-              <button class="btn mx-auto btn-outline-secondary">
-                Why join & invest <span><i class="fa fa-arrow-right"></i></span>
+              <button class="btn mx-auto btn-outline-secondary font-mono">
+                Why join <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
           </div>
