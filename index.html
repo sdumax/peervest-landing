@@ -28,8 +28,22 @@
 
     <style>
       @font-face {
+        font-family: "SpaceMono";
+        src: url(./assets/fonts/SpaceMono-Regular.ttf);
+      }
+      @font-face {
         font-family: "supplyBold";
         src: url(./assets/fonts/supply-bold.otf);
+      }
+      @font-face {
+        font-family: "SpaceGrotesk";
+        src: url(./assets/fonts/SpaceGrotesk-light.otf);
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "SpaceGroteskMedium";
+        src: url(./assets/fonts/SpaceGrotesk-Medium.otf);
+        font-weight: 400;
       }
       @font-face {
         font-family: "supplyLight";
@@ -40,7 +54,9 @@
         src: url(./assets/fonts/supply.otf);
       }
       body {
-        font-family: "supply";
+        font-family: "SpaceGroTesk";
+        font-size: 15px;
+        color: #414141;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -49,24 +65,51 @@
       h3,
       h4,
       h5,
-      h6,small {
+      h6,
+      small {
         font-family: "supplyBold";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      button{
+        font-family: "SpaceGroteskMedium";
+        font-size: 14px !important;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .font-mono{
+        font-family: "SpaceMono";
+      }.font-spt{
+        font-family: "SpaceGrotesk";
+      }.step{
+        /* border: 1px solid; */
+        width: 50px !important;
+      }
+      .font-13{
+        font-size: 14px !important;
+      }
 
       .item {
-        text-align: left;
-        padding: 30px;
+        text-align: center;
+        padding: 10px 30px;
         margin: auto;
         justify-content: center;
         width: 100;
         height: 100vh;
+      }
+      .card-body {
+        padding-top: 0 !important;
       }.card-header{
-        padding-left: 0;
-      }.divide
-      .screen {
+        padding-bottom: 0;
+      }
+      .divide .screen {
         height: 100%;
+      }
+      i.fa.fa-chevron-down,i.fa.fa-chevron-up{
+        font-size: x-small;
+      }
+      .what-you-get img.globe{
+        width: 38px !important;
       }
       .owl-nav {
         position: absolute;
@@ -76,35 +119,55 @@
       }
       .iti {
         width: 100%;
-      }.accord{
-            
-          }.text-black{
-            color: #333;
-          }.text-black:hover, .text-black:focus{
-            color: #333;
-            border: none;
-          } .btn-link:hover,
- .btn-link:focus {
-  text-decoration: none;
-  box-shadow: none;
-}.card, .card:last-child .card-header {
-  border: none;
-}.custom-button{
-  display: inline-block;
-  padding: 9px 15px;
-  color: #333;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 0;
-  background-color: transparent;
-  text-transform: uppercase;
-  text-align: center;
-  border: 1px solid #333;
-}.btn-color{
-  background-color: #00ffd0;
-}.font-2{
-  font-size: 1.6rem;
-}
+      }
+      .accord {
+      }
+      .text-black {
+        color: #333;
+      }
+      .text-black:hover,
+      .text-black:focus {
+        color: #333;
+        border: none;
+      }
+      .btn-link:hover,
+      .btn-link:focus {
+        text-decoration: none;
+        box-shadow: none;
+      }
+      .card,
+      .card:last-child .card-header {
+        border: none;
+      }
+      .custom-button {
+        display: inline-block;
+        padding: 9px 15px;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid #333;
+      }
+      img.globe {
+        width: 38px !important;
+        height: auto;
+      }
+      .bo {
+        border: 1px solid #333;
+        padding: 9px 12px;
+      }
+      .btn-color {
+        background-color: #00ffd0;
+        border: none;
+      }.step{
+
+      }
+      .font-2 {
+        font-size: 1.4rem;
+      }
     </style>
   </head>
   <body>
@@ -212,130 +275,227 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item what-you-get">
             <h3>
-              WHAT IT TAKE <br />
+              WHAT YOU GET <br />
+              <!-- <span class="text-muted small"
+                >why join & invest with peervest?</span
+              > -->
             </h3>
             <div id="accordion">
               <div class="card border-0 bg-white">
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingOne"
-                ><h5 class="text-muted">STEP 1</h5>
-                  <h5 class="mb-0 ">
-                    <span class="d-flex flex-row align-items-center">
-                      <i class="fa fa-arrow-right"></i>
+                >
+                  <!-- <h6 class="text-muted font-mono small mt-3">STEP 1</h6> -->
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/levrage.png"
+                    alt=""
+                  />
+                  <h5 class="mb-0">
+                    <span class="">
                       <button
-                        class="btn btn-link accord text-black text-decoration-none"
+                        class="mb-0 d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link accord text-black text-decoration-none"
                         data-toggle="collapse"
-                        data-target="#collapseOne"
+                        data-target="#leverage"
                         aria-expanded="true"
-                        aria-controls="collapseOne"
+                        aria-controls="leverage"
                       >
-                      Strategic hunt & negotiation
+                        <span>Leverage:</span>
+                        <i class="fa fa-chevron-down box mb-0"></i>
                       </button>
                     </span>
                   </h5>
                 </div>
                 <div
-                id="collapseOne"
-                class="collapse collapsed"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
+                  id="leverage"
+                  class="collapse collapsed"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
                 >
-                <div class="card-body">
-                  We strategically hunt for profitable deals, critically vet
-                  them using our predictive models and processes, once we
-                  find a fitting deal, it is divided into 10,000 units and a
-                  campaign project is created on Peervest.
+                  <div class="card-body">
+                    With little capital, you can leverage community to purchase
+                    assets worth $1M with only $150K, allowing you to access the
+                    wealth-building strategies and information used by high
+                    net-worth individuals.
+                  </div>
                 </div>
-              </div>
-              <hr class="m-0">
+                <!-- <hr class="m-0  mx-auto step" /> -->
               </div>
               <div class="card border-0">
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingTwo"
-                ><h5 class="text-muted">STEP 2</h5>
+                >
+                  <!-- <h6 class="text-muted mt-3 font-mono small">STEP 2</h6> -->
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/bar-chart.png"
+                    alt=""
+                  />
                   <h5 class="mb-0">
-                     <span class="d-flex flex-row align-items-center"><i class="fa fa-arrow-right"></i>
-                   
-                    <button
-                      class="btn btn-link collapsed accord text-black text-decoration-none"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                    You reserve now & pay later
-                    </button></span>
+                    <span class="">
+                      <!-- <i class="fa fa-arrow-right"></i> -->
+
+                      <button
+                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#appreciate"
+                        aria-expanded="false"
+                        aria-controls="appreciate"
+                      >
+                        <span>Appreciation:</span>
+                        <i class="fa fa-chevron-down box"></i></button
+                    ></span>
                   </h5>
                 </div>
                 <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion"
+                  id="appreciate"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
                 >
-                <div class="card-body">
-                  
-                  Reserve units in the project, during the reservation window.
-                  When you reserve units, you won’t pay until a reservation
-                  milestone is met and the project is good to go.
+                  <div class="card-body p-0">
+                    A portfolio of global assets ensure that your portfolio not only
+                appreciates in value, but is not affected by devaluing of local
+                currency.
+                  </div>
                 </div>
+                <!-- <hr class="m-0  mx-auto step" /> -->
               </div>
-              <hr class="m-0">
-            </div>
-            <div class="card border-0">
+              <div class="card border-0">
                 <div
                   class="card-header border-0 border-bottom border-dark bg-white"
                   id="headingThree"
-                > <h5 class="text-muted">STEP 3</h5>
+                >
+                  <!-- <h6 class="text-muted font-mono mt-3 small">STEP 3</h6> -->
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/horse-head.png"
+                    alt=""
+                  />
                   <h5 class="mb-0">
-                    <span class="d-flex flex-row align-items-center"><i class="fa fa-arrow-right"></i>
-                    <button
-                      class="btn btn-link collapsed accord text-black text-decoration-none"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
+                    <span class=""
+                      >
+                      <button
+                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#stable"
+                        aria-expanded="false"
+                        aria-controls="stable"
+                      >
+                         <span>Stability:</span>
+                        <i class="fa fa-chevron-down box"></i></button
                     >
-                    You get paid
-                    </button></span>
+                      </button></span
+                    >
                   </h5>
                 </div>
                 <div
-                id="collapseThree"
-                class="collapse"
-                aria-labelledby="headingThree"
-                data-parent="#accordion"
+                  id="stable"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
                 >
-                <div class="card-body">
-                  Peervest will take care of the deal and provide regular updates
-                  and cash distribution monthly, quarterly, yearly etc. as the
-                  case may be, while you focus on the things that matter most to
-                  you.
+                  <div class="card-body">
+                    With Peervest you get to do transactions using strong current
+                currencies such as the USD, CAD, GBP etc. Also, the assets class
+                of interest to the Peervest community are generally less
+                volatile and has historically outperform popular indexes around
+                the world.
+                  </div>
                 </div>
+                <!-- <hr class="m-0 step mx-auto" /> -->
               </div>
-              <hr class="m-0">
+              <div class="card border-0">
+                <div
+                  class="card-header border-0 border-bottom border-dark bg-white"
+                  id="headingThree"
+                >
+                  <!-- <h6 class="text-muted font-mono mt-3 small">STEP 3</h6> -->
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/welfare.png"
+                    alt=""
+                  />
+                  <h5 class="mb-0">
+                    <span class=""
+                      >
+                      <button
+                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#cashflow"
+                        aria-expanded="false"
+                        aria-controls="cashflow"
+                      >
+                         <span>Cash Flow</span>
+                        <i class="fa fa-chevron-down box"></i></button
+                    >
+                      </button></span
+                    >
+                  </h5>
+                </div>
+                <div
+                  id="cashflow"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Some asset such as real estate, create and provide attractive,
+                consistent income monthly income stream (passive income), to our
+                peers who own them.
+                  </div>
+                </div>
+                <!-- <hr class="m-0 step mx-auto" /> -->
+              </div>
+              <div class="card border-0">
+                <div
+                  class="card-header border-0 border-bottom border-dark bg-white"
+                  id="headingThree"
+                >
+                  <!-- <h6 class="text-muted font-mono mt-3 small">STEP 3</h6> -->
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/investment.png"
+                    alt=""
+                  />
+                  <h5 class="mb-0">
+                    <span class=""
+                      >
+                      <button
+                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#benefit"
+                        aria-expanded="false"
+                        aria-controls="benefit"
+                      >
+                         <span>More benefits</span>
+                        <i class="fa fa-chevron-down box"></i></button
+                    >
+                      </button></span
+                    >
+                  </h5>
+                </div>
+                <div
+                  id="benefit"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    There are so many other reasons to join Peervest, such as
+                    immigration assistance, tax benefits, amortization, opportunity
+                    to learn more about information not taught in school and much
+                    more.
+                  </div>
+                </div>
+                <!-- <hr class="m-0 step mx-auto" /> -->
+              </div>
             </div>
-          </div>
-          
-            <div class="my-4">
-              <button class="btn mx-auto btn-outline-secondary">
-                Why join & invest <span><i class="fa fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-          <div class="item">
-            <h3>
-              WHAT YOU GET <br />
-              <span class="text-muted small"
-                >why join & invest with peervest?</span
-              >
-            </h3>
-
-            <dl>
+            <!-- <dl>
               <dt>Leverage:</dt>
               <dd>
                 With little capital, you can leverage community to purchase
@@ -370,9 +530,151 @@
                 to learn more about information not taught in school and much
                 more.
               </dd>
-            </dl>
+            </dl> -->
             <div class="my-2">
-              <button class="custom-button btn-color mx-auto text-white badge-success">
+              
+              <button class="custom-button mx-auto">
+                What it takes <span><i class="fa fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <h3>WHAT IT TAKES <br /></h3>
+<small class="font-spt font-13">Divorce your time and income in three easy steps</small>
+<!-- <hr class="m-0  mx-auto my-1 step" /> -->
+
+            <div id="accordion">
+              <div class="card border-0 bg-white">
+                <div
+                  class="card-header border-0 border-bottom border-dark bg-white"
+                  id="headingOne"
+                >
+                  <h6 class="text-muted font-mono small mt-3">STEP 1</h6>
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/icon-1.png"
+                    alt=""
+                  />
+                  <h5 class="mb-0">
+                    <span class="">
+                      <button
+                        class="mb-0 d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#negociate"
+                        aria-expanded="true"
+                        aria-controls="negociate"
+                      >
+                        <span>We hunt & negotiation</span>
+                        <i class="fa fa-chevron-down box mb-0"></i>
+                      </button>
+                    </span>
+                  </h5>
+                </div>
+                <div
+                  id="negociate"
+                  class="collapse collapsed"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    We strategically hunt for profitable deals, critically vet
+                    them using our predictive models and processes, once we find
+                    a fitting deal, it is divided into 10,000 units and a
+                    campaign project is created on Peervest.
+                  </div>
+                </div>
+                <!-- <hr class="m-0  mx-auto step" /> -->
+              </div>
+              <div class="card border-0">
+                <div
+                  class="card-header border-0 border-bottom border-dark bg-white"
+                  id="headingTwo"
+                >
+                  <h6 class="text-muted mt-3 font-mono small">STEP 2</h6>
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/icon-2.png"
+                    alt=""
+                  />
+                  <h5 class="mb-0">
+                    <span class="">
+                      <!-- <i class="fa fa-arrow-right"></i> -->
+
+                      <button
+                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#paylater"
+                        aria-expanded="false"
+                        aria-controls="paylater"
+                      >
+                        <span>You reserve now<br> & pay later</span>
+                        <i class="fa fa-chevron-down box"></i></button
+                    ></span>
+                  </h5>
+                </div>
+                <div
+                  id="paylater"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body p-0">
+                    Reserve units in the project, during the reservation window.
+                    When you reserve units, you won’t pay until a reservation
+                    milestone is met and the project is good to go.
+                  </div>
+                </div>
+                <!-- <hr class="m-0  mx-auto step" /> -->
+              </div>
+              <div class="card border-0">
+                <div
+                  class="card-header border-0 border-bottom border-dark bg-white"
+                  id="headingThree"
+                >
+                  <h6 class="text-muted font-mono mt-3 small">STEP 3</h6>
+                  <img
+                    class="globe mx-auto"
+                    src="./assets/images/hand.svg"
+                    alt=""
+                  />
+                  <h5 class="mb-0">
+                    <span class=""
+                      >
+                      <button
+                        class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
+                        data-toggle="collapse"
+                        data-target="#getpaid"
+                        aria-expanded="false"
+                        aria-controls="getpaid"
+                      >
+                         <span>You get paid</span>
+                        <i class="fa fa-chevron-down box"></i></button
+                    >
+                      </button></span
+                    >
+                  </h5>
+                </div>
+                <div
+                  id="getpaid"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    Peervest will take care of the deal and provide regular
+                    updates and cash distribution monthly, quarterly, yearly
+                    etc. as the case may be, while you focus on the things that
+                    matter most to you.
+                  </div>
+                </div>
+                <!-- <hr class="m-0 step mx-auto" /> -->
+              </div>
+            </div>
+
+            <div class="my-4">
+              <button
+                class="custom-button btn-color mx-auto text-white badge-success"
+              >
                 Sign up <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
