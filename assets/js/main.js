@@ -1,18 +1,18 @@
-$('.owl-carousel').owlCarousel({
-	singleItem:true,
-	loop: false,
-	nav: true,
-    items:1,
-	margin:30,
-	dots: false,
-	navText: [
-        '<button class="btn btn-primary"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>',
-        '<button class="btn btn-primary"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>'
-      ]
+$(".owl-carousel").owlCarousel({
+  singleItem: true,
+  loop: false,
+  nav: false,
+  items: 1,
+  margin: 30,
+  dots: false,
+  navText: [
+    '<button class="btn btn-primary"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>',
+    '<button class="btn btn-primary"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>',
+  ],
 });
 var input = document.querySelector("#phone");
 window.intlTelInput(input, {
-	utilsScript: "assets/vendors/intl-tel-input-master/build/js/utils.js",
+  utilsScript: "assets/vendors/intl-tel-input-master/build/js/utils.js",
 });
 
 // $(function(){
@@ -25,7 +25,7 @@ window.intlTelInput(input, {
 // 			type: form.attr("method"), //post
 // 			url: form.attr("action"), //post.php
 // 			data: form.serialize(), //values of all field
-// 			dataType: "json", 
+// 			dataType: "json",
 // 			success: function(data){
 // 				$(".response").text(data.content);
 // 			},
@@ -35,4 +35,3 @@ window.intlTelInput(input, {
 // 		});
 // 	});
 // });
-	
