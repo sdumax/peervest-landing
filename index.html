@@ -173,8 +173,27 @@
       }
       .font-2 {
         font-size: 1.4rem;
-      }.font-perky{
+      }.font-1{
+        font-size:1.2rem;
+      }.font-3{
+        font-size: 2.3rem;
+      }
+      .font-perky{
         font-family: "PerkyDreams";
+      }
+      .bottom{
+        margin-top: 30%;
+      }.font-light{
+        font-family: "supplyLight";
+      }.sticky-bottom{
+        position: absolute;
+        width: 100%;
+        bottom: 22%;
+        z-index: 3;
+        left: 0;
+      }.img-width-16{
+        width: 16px !important;
+        height: 100%;
       }
     </style>
   </head>
@@ -192,30 +211,33 @@
       <hr class="m-0">
       <div class="container-fliud">
         <div class="owl-carousel owl-theme owl-loaded">
-          <div class="item">
-            <h6 class="text-muted text-lg-left text-md-center">
+          <div class="item bottom">
+            <div>
+               <h6 class="text-muted text-lg-left text-md-center">
               EASY. SMART. BETTER. ALTERNATIVE INVESTING, FROM $500
             </h6>
-            <h2 class="text-lg-left">
-              YOU JUST FOUND YOUR WEALTH BUILDING PEERS.
+            <h2 class="text-lg-left font-3">
+              YOU JUST FOUND YOUR WEALTH-BUILDING PEERS.
             </h2>
-            <p class="text-lg-left">
+            <p class="text-lg-left font-1">
               Peervest brings a new way for like minded peers to invest in
               highly vetted global assets and deals.
             </p>
             <div class="my-4">
-              <button class="custom-button mx-auto">
+              <button class="custom-button mx-auto sticky-bottom">
                 How <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
+            </div>
+           
           </div>
           <div class="item">
-            <h2 class="text-lg-left">CHANGING WORLD NEW OPPORTUNITIES</h2>
+            <h2 class="text-lg-left"><span class="font-light ml-2">CHANGING WORLD</span>  NEW OPPORTUNITIES</h2>
             <p class="text-lg-left">
               By leveraging the power of community, technology, networks, and
               collective capital, together we make alternative investing easier,
-              better, and safer.
-              <b class="font-16">THE RESULT...</b>
+              better, and safer. <br/>
+              <h3 class="font-16">THE RESULT...</h3><br/>
               <em>
                 Together we build a portfolio that creates attractive regular
                 consistent (passive) income in the short run and superior
@@ -233,45 +255,49 @@
               <div class="">
                 <h3>INVESTMENT AREAS</h3>
               </div>
-              <div class="card-body text-left">
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label">
-                    <i class="fa fa-check"></i>
+              <div class="card-body text-left d-flex flex-column justify-content-between align-items-center">
+                <div class="form-check form-check-inline my-2">
+                  <label class="form-check-label mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/images/shield.png" class="img-width-16" alt="">
+                    
                     Farmlands
                   </label>
                 </div>
-                <hr />
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label">
-                    <i class="fa fa-check"></i>
-
+                
+                <div class="form-check form-check-inline my-2">
+                  <label class="form-check-label mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/images/shield.png" class="img-width-16" alt="">
+                    
                     Real Estate
                   </label>
                 </div>
-                <hr />
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label">
-                    <i class="fa fa-check"></i>
+                
+                <div class="form-check form-check-inline my-2">
+                  <label class="form-check-label mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/images/shield.png" class="img-width-16" alt="">
+                    
                     P2P lending
                   </label>
                 </div>
-                <hr />
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label">
-                    <i class="fa fa-check"></i>
+          
+                <div class="form-check form-check-inline my-2">
+                  <label class="form-check-label mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/images/shield.png" class="img-width-16" alt="">
+                    
                     Business Acquisition
                   </label>
                 </div>
-                <hr />
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label">
-                    <i class="fa fa-check"></i>
+                
+                <div class="form-check form-check-inline my-2">
+                  <label class="form-check-label mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/images/shield.png" class="img-width-16" alt="">
+                    
                     Commodities Trading
                   </label>
                 </div>
-                <hr />
-                <div class="form-check form-check-inline">
-                  <i class="fa fa-check"></i>
+                <label class="form-check-label mx-auto d-flex flex-column justify-content-center align-items-center">
+                  <img src="./assets/images/shield.png" class="img-width-16" alt="">
+                  
                     And More
                   </label>
                 </div>
@@ -677,9 +703,9 @@
 
             <div class="my-4">
               <button
-                class="custom-button btn-color mx-auto text-white badge-success"
+                class="custom-button mx-auto badge-success"
               >
-                Sign up <span><i class="fa fa-arrow-right"></i></span>
+                Join us <span><i class="fa fa-arrow-right"></i></span>
               </button>
             </div>
           </div>
@@ -727,7 +753,7 @@
                 onclick="myFunction()"
                 name="submit"
                 id="submit"
-                class="btn btn-primary btn-lg btn-block"
+                class="custom-button btn-color text-white w-100"
               >
                 Sign Up
               </button>
