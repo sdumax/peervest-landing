@@ -1,32 +1,32 @@
 @font-face {
   font-family: "SpaceMono";
-  src: url(./assets/fonts/SpaceMono-Regular.ttf);
+  src: url(../fonts/SpaceMono-Regular.ttf);
 }
 @font-face {
   font-family: "PerkyDreams";
-  src: url(./assets/fonts/perky-dream.regular.ttf);
+  src: url(../fonts/perky-dream.regular.ttf);
 }
 @font-face {
   font-family: "supplyBold";
-  src: url(./assets/fonts/supply-bold.otf);
+  src: url(../fonts/supply-bold.otf);
 }
 @font-face {
   font-family: "SpaceGrotesk";
-  src: url(./assets/fonts/SpaceGrotesk-light.otf);
+  src: url(../fonts/SpaceGrotesk-light.otf);
   font-weight: 300;
 }
 @font-face {
   font-family: "SpaceGroteskMedium";
-  src: url(./assets/fonts/SpaceGrotesk-Medium.otf);
+  src: url(../fonts/SpaceGrotesk-Medium.otf);
   font-weight: 400;
 }
 @font-face {
   font-family: "supplyLight";
-  src: url(./assets/fonts/supply-light.otf);
+  src: url(../fonts/supply-light.otf);
 }
 @font-face {
   font-family: "supply";
-  src: url(./assets/fonts/supply.otf);
+  src: url(../fonts/supply.otf);
 }
 body {
   font-family: "SpaceGroTesk";
@@ -137,7 +137,7 @@ i.fa.fa-chevron-up {
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #333;
+  border: 2px solid #414141;
 }
 img.globe {
   width: 38px !important;
