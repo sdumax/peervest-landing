@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  document.requestFullscreen();
+});
+
 $(".owl-carousel").owlCarousel({
   singleItem: true,
   loop: false,
