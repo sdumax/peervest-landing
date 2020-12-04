@@ -184,9 +184,10 @@ img.globe {
   width: 16px !important;
   height: 100%;
 }
-.screen {
+.mb {
   /* height: 100vh !important; */
   /* overflow-y: hidden; */
+  margin-bottom: -60px;
 }
 .anime-grow-1 {
   animation-duration: 1s;
@@ -226,3 +227,20 @@ img.globe {
   border: none;
   background: none;
 }
+.modal {
+  width: 100%;
+  padding-right: 0 !important;
+  /* top: 50%; */
+  height: 100vh;
+  bottom: 0;
+  transition: all 1.6s;
+  animation: fadeIn .6s ease-in-out;
+}
+/* .modal-dialog { */
+/* bottom: 0;
+
+} */
+@keyframe fadeInUp {
+  form{bottom: 0px}
+  to{bottom: 100%}
+} */

@@ -69,12 +69,28 @@
                   />
                   <h5 class="mb-0">
                     <span class="">
-                      <button
+                      <!-- <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target=".bd-example-modal-md"
+              >
+                Large modal
+              </button> -->
+                      <!-- <button
                         class="mb-0 d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link accord text-black text-decoration-none"
                         data-toggle="collapse"
                         data-target="#leverage"
                         aria-expanded="true"
                         aria-controls="leverage"
+                      >
+                        <span>Leverage:</span>
+                        <span><small class="font-spt font-13 text-tranc-0">More</small> <i class="fa fa-chevron-down box mb-0"></i></span>
+                      </button> -->
+                      <button
+                        class="mb-0 d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link accord text-black text-decoration-none"
+                        data-toggle="modal"
+                        data-target=".bd-example-modal-md"
                       >
                         <span>Leverage:</span>
                         <span><small class="font-spt font-13 text-tranc-0">More</small> <i class="fa fa-chevron-down box mb-0"></i></span>
@@ -115,9 +131,8 @@
                       <button
                         class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
                         data-toggle="collapse"
-                        data-target="#appreciate"
-                        aria-expanded="false"
-                        aria-controls="appreciate"
+                        data-toggle="modal"
+                        data-target=".bd-example-modal-md"
                       >
                         <span>Appreciation:</span>
                         <span><small class="font-spt font-13 text-tranc-0">More</small> <i class="fa fa-chevron-down box mb-0"></i></span></span>
@@ -153,10 +168,8 @@
                       >
                       <button
                         class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
-                        data-toggle="collapse"
-                        data-target="#stable"
-                        aria-expanded="false"
-                        aria-controls="stable"
+                        data-toggle="modal"
+                        data-target=".bd-example-modal-md"
                       >
                          <span>Stability:</span>
                         <span><small class="font-spt font-13 text-tranc-0">More</small> <i class="fa fa-chevron-down box mb-0"></i></span>
@@ -196,10 +209,8 @@
                       >
                       <button
                         class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
-                        data-toggle="collapse"
-                        data-target="#cashflow"
-                        aria-expanded="false"
-                        aria-controls="cashflow"
+                        data-toggle="modal"
+                data-target=".bd-example-modal-md"
                       >
                          <span>Cash Flow</span>
                         <span><small class="font-spt font-13 text-tranc-0">More</small> <i class="fa fa-chevron-down box mb-0"></i></span>
@@ -237,10 +248,8 @@
                       >
                       <button
                         class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
-                        data-toggle="collapse"
-                        data-target="#benefit"
-                        aria-expanded="false"
-                        aria-controls="benefit"
+                        data-toggle="modal"
+                        data-target=".bd-example-modal-md"
                       >
                          <span>More benefits</span>
                         <span><small class="font-spt font-13 text-tranc-0">More</small> <i class="fa fa-chevron-down box mb-0"></i></span>
@@ -312,6 +321,33 @@
         How it works <span class="ml-1"><i class="fa fa-arrow-right animate"></i></span>
       </a>
     </footer>
+    <div
+      class="modal fadeInUp bd-example-modal-md"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg fixed-bottom w-100 mx-0 my-0 back">
+        <div class="modal-body bg-white">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+          officia aperiam quis quaerat itaque quod cumque modi eum ex quibusdam
+          voluptas, reiciendis, vero autem fugit, voluptate adipisci ab cum
+          maxime nobis perferendis exercitationem velit ratione incidunt!
+          Voluptates, omnis pariatur possimus aspernatur in veniam doloribus
+          quis quisquam cumque! Harum commodi saepe ducimus obcaecati quam ea
+          repudiandae, sapiente tenetur reprehenderit, quaerat dolorum
+          aspernatur, nulla dolorem officiis? Ipsam minus cupiditate non, vel
+          dignissimos dolores tenetur repellendus animi in assumenda molestiae
+          itaque, nam totam, enim repudiandae pariatur minima voluptate illum
+          rem error atque hic architecto? Architecto tempora minima minus
+          necessitatibus quos nisi animi culpa.
+        </div>
+        <div class="modal-footer bg-white border-0">
+          <div class="btn btn-block btn-color">submit</div>
+        </div>
+      </div>
+    </div>
     <script src="./assets/vendors/jquery/jquery-3.4.1.min.js"></script>
     <script src="./assets/vendors/popper.js/dist/popper-utils.min.js"></script>
     <script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
