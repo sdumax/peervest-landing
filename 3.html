@@ -130,7 +130,6 @@
 
                       <button
                         class="d-flex flex-column justify-content-center align-items-center mx-auto btn btn-link collapsed accord text-black text-decoration-none"
-                        data-toggle="collapse"
                         data-toggle="modal"
                         data-target=".bd-example-modal-md"
                       >
@@ -329,7 +328,11 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg fixed-bottom w-100 mx-0 my-0 back">
-        <div class="modal-body bg-white">
+        <div class="modal-header bg-white">
+            <h5 class="mx-auto" id="vest_name">Heading here</h5>
+          </div>
+          <div class="modal-body bg-white" id="vest_body">
+          
           Lorem ipsum, vel
           dignissimos dolores tenetur repellendus animi in assumenda molestiae
           itaque, nam totam, enim repudiandae pariatur minima voluptate illum
@@ -337,7 +340,7 @@
           necessitatibus quos nisi animi culpa.
         </div>
         <div class="modal-footer bg-white border-0">
-          <div class="btn btn-block btn-color">submit</div>
+          <button class="custom-button-1 text-center font-weight-bold btn-color text-white">Got it</button>
         </div>
       </div>
     </div>
