@@ -30,7 +30,7 @@
   </head>
   <body>
     <div class="screen">
-      <nav class="navbar navbar-light bg-white sticky-top">
+      <nav class="navbar navbar-light bg-white fixed-top">
         <div>
           <a href="4.html"><i class="ml-2 fa fa-arrow-left"></i></a>
         </div>
@@ -39,8 +39,9 @@
           <i class="fa fa-ellipsis-v font-2"></i>
         </div>
       </nav>
-      <hr class="m-0" />
-      <div class="container-fliud">
+      <div class="container-fliud mt-5">
+        <hr class="mt-5 fixed-top" />
+
         <div class="owl-carousel owl-theme owl-loaded">
           <div class="item">
             <h3>JOIN US</h3>
@@ -83,6 +84,7 @@
               </div>
               <button
                 type="button"
+                hidden
                 onclick="myFunction()"
                 name="submit"
                 id="submit"
@@ -99,7 +101,14 @@
         </div>
       </div>
     </div>
-
+    <footer
+      class="my-1 sticky-bottom custom-button btn-color text-white mx-auto"
+    >
+      <button href="5.html" class="mx-auto anime-grow-2 style-none">
+        Join us
+        <span class="ml-1"><i class="fa fa-arrow-right"></i></span>
+      </button>
+    </footer>
     <script src="./assets/vendors/jquery/jquery-3.4.1.min.js"></script>
     <script src="./assets/vendors/popper.js/dist/popper-utils.min.js"></script>
     <script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
