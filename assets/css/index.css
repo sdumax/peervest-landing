@@ -223,9 +223,20 @@ img.globe {
     transform: scale(1);
   }
 }
+button.card {
+  width: 150px;
+  margin: 10px;
+}
+.btn-card {
+  font-size: 12px !important;
+}
 .style-none {
   border: none;
   background: none;
+  outline: none;
+}
+.style-none:focus {
+  outline: none;
 }
 .modal {
   width: 100%;
