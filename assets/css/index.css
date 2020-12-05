@@ -190,12 +190,9 @@ img.globe {
 }
 .bottom {
   position: absolute;
-  width: 100%;
   left: 0;
   right: 0;
   bottom: 0;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 .sticky-bottom {
   position: fixed;
@@ -219,7 +216,6 @@ img.globe {
   animation-duration: 1s;
   animation-name: beep1;
   animation-iteration-count: infinite;
-  /* animation-direction: alternate; */
 }
 @keyframes beep1 {
   0% {
