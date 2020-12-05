@@ -139,6 +139,16 @@ i.fa.fa-chevron-up {
   text-align: center;
   border: 2px solid #414141;
 }
+.custom-button-2 {
+  padding: 9px 15px;
+  color: #414141;
+  cursor: pointer;
+  /* background-color: white; */
+  border: 2px solid #414141;
+  display: block;
+  text-align: center;
+  background-color: teal;
+}
 img.globe {
   width: 38px !important;
   height: auto;
