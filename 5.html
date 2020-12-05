@@ -27,6 +27,11 @@
     />
 
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <style>
+      .alert {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div class="screen">
@@ -34,7 +39,7 @@
         <div>
           <a href="4.html"><i class="ml-2 fa fa-arrow-left"></i></a>
         </div>
-        <a href="#">
+        <a href="index.html">
           <img
             class="navbar-brand ml-4 font-perky navbar-logo"
             src="./assets/images/logo-1.jpeg"
@@ -56,7 +61,18 @@
               Peervest is currently in private beta. Join the waitlist to get
               your invitation.
             </p>
-            <form id="form_submit" action="post.php" method="POST">
+            <div class="alert alert-danger">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div id="formResult"></div>
+            </div>
+            <form id="formSubmit" action="post.php" method="POST">
               <div class="form-group">
                 <label for="name" class="align-content-start">Name:</label>
                 <input
@@ -90,8 +106,6 @@
               </div>
               <button
                 type="button"
-                hidden
-                onclick="myFunction()"
                 name="submit"
                 id="submit"
                 class="custom-button btn-color text-white w-100"
@@ -108,9 +122,7 @@
       </div>
     </div>
     <a href="#">
-      <footer
-        class="my-1 fixed-bottom custom-button-2 btn-color text-white mx-auto"
-      >
+      <footer class="my-1 fixed-bottom custom-button-2 btn-color text-white">
         <div class="mx-auto anime-grow-2 style-none">
           Join us
           <span class="ml-1"><i class="fa fa-arrow-right"></i></span>
@@ -125,29 +137,23 @@
     <script src="./assets/vendors/intl-tel-input-master/build/js/intlTelInput.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
-      function myFunction() {
-        var name = document.getElementById("name");
-        var phone = document.getElementById("phone");
-        var email = document.getElementById("email");
+      $(document).ready(function () {
+        $("#submit").click(function (event) {
+          event.preventDefault();
 
-        var dataString =
-          "name1 =" + name + "&phone1 =" + phone + "&email1 =" + email;
-
-        if (name == "" || phone == "" || email == "") {
-          alert("Please fill all fields");
-        } else {
+          //check if anything is wrong
+          var formData = $("#formSubmit").serialize();
+          console.log(formData);
           $.ajax({
-            type: "POST",
-            url: "post.php",
-            data: dataString,
-            cache: false,
-            success: function (html) {
-              alert(html);
-            },
+            url: "action.php",
+            method: "post",
+            data: formData + "&action=submit",
+          }).done(function (result) {
+            $(".alert").show();
+            $("#formResult").html(result);
           });
-        }
-        return false;
-      }
+        });
+      });
     </script>
   </body>
 </html>

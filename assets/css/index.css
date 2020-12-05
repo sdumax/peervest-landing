@@ -118,6 +118,9 @@ i.fa.fa-chevron-up {
   color: #333;
   border: none;
 }
+.font-16px {
+  font-size: 16px;
+}
 .btn-link:hover,
 .btn-link:focus {
   text-decoration: none;
@@ -243,6 +246,7 @@ button.card {
 }
 .btn-card {
   font-size: 12px !important;
+  font-family: "SpaceGrotesk";
 }
 .style-none {
   border: none;
