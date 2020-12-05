@@ -30,7 +30,7 @@
 }
 body {
   font-family: "SpaceGroTesk";
-  font-size: 15px;
+  font-size: 16px;
   color: #414141;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -81,7 +81,7 @@ a:hover {
   margin: auto;
   justify-content: center;
   width: 100;
-  height: 100vh;
+  height: calc(100vh - 50px);
 }
 .card-body {
   padding-top: 0 !important;
@@ -177,7 +177,7 @@ img.globe {
   font-size: 1.2rem;
 }
 .font-3 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
 .font-perky {
   font-family: "PerkyDreams";
@@ -187,6 +187,15 @@ img.globe {
 }
 .font-light {
   font-family: "supplyLight";
+}
+.bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .sticky-bottom {
   position: fixed;
