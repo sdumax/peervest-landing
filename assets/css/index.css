@@ -153,6 +153,10 @@ img.globe {
   width: 38px !important;
   height: auto;
 }
+.navbar-logo {
+  height: 40px;
+  width: 130px;
+}
 .bo {
   border: 1px solid #333;
   padding: 9px 12px;
